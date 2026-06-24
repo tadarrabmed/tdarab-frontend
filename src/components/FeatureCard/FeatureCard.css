@@ -1,0 +1,29 @@
+.feature {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  min-width: 350px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.feature span {
+  font-size: 22px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.feature p {
+  font-size: 13px;
+  color: #374151;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+@media (max-width: 600px) {
+  .feature {
+    min-width: 100%;
+  }
+}

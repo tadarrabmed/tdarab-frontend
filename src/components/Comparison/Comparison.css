@@ -1,0 +1,41 @@
+.comparison {
+  padding: 80px 20px;
+  text-align: center;
+   background: linear-gradient(135deg, #1e3a8a, #6366f1);
+}
+
+.comparison h2 {
+  margin-bottom: 40px;
+}
+
+.comparison .table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 600px;
+  margin: auto;
+  background:white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+ 
+}
+.comparison .table div {
+color: var(--background);
+}
+
+.comparison .table div {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.comparison .table div:nth-child(odd) {
+  background:white;
+
+}
+
+.comparison .table div:nth-child(1),
+.comparison .table div:nth-child(2) {
+  font-weight: bold;
+background: linear-gradient(145deg, #0f172a, #111c33);
+  color: white !important;
+}

@@ -1,0 +1,107 @@
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 24px;
+  padding: 48px 52px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 160px;
+}
+
+.profile-avatar-svg {
+  flex-shrink: 0;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-name {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.profile-email {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+
+.profile-badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+
+.plan-badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.plan-badge--free     { background: rgba(255,255,255,0.2); color: white; }
+.plan-badge--basic    { background: #3b82f6; color: white; }
+.plan-badge--advanced { background: #8b5cf6; color: white; }
+.plan-badge--full     { background: #f59e0b; color: white; }
+
+.expiry-badge {
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.expiry--unlimited { background: rgba(255,255,255,0.15); color: rgba(255,255,255,0.85); }
+.expiry--active    { background: rgba(52, 211, 153, 0.2); color: #6ee7b7; }
+.expiry--soon      { background: rgba(251, 191, 36, 0.2); color: #fcd34d; }
+.expiry--expired   { background: rgba(239, 68, 68, 0.2);  color: #fca5a5; }
+
+.profile-activate-btn {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 9px 18px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+  width: fit-content;
+}
+
+.profile-activate-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px 20px;
+  }
+
+  .profile-badges {
+    justify-content: center;
+  }
+
+  .profile-activate-btn {
+    width: 100%;
+  }
+}

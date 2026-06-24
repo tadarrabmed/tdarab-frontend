@@ -1,0 +1,44 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+  text-align: end;
+  background-image: url("../../assets/image/bg-hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.layer {
+  background-color: rgba(8, 18, 46, 0.517);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.hero-content {
+  z-index: 10;
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.title-hero {
+  font-size: 4rem;
+  width: 60%;
+
+}
+
+.hero p {
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .title-hero {
+    font-size: 2.6rem;
+    width: 100%;
+  }
+}

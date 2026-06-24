@@ -1,0 +1,30 @@
+
+.title-text{
+  color: var(--dark-blue);
+}
+
+.texthero{
+  color: white;
+
+}
+.line {
+  width: 100px;
+  height: 2px;
+  background-color: var(--dark-blue);
+  margin: 10px 0px;
+  border-radius: 50%;
+}
+.text-content {
+  margin-bottom: 50px;
+  text-align: center;
+  color: rgb(94, 93, 93);
+}
+.herotitle{
+color: white;
+font-size: 3.5rem;
+}
+@media (max-width:600px) {
+  .herotitle{
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,31 @@
+.problem {
+  padding: 80px 20px;
+  text-align: center;
+
+}
+
+.problem h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: var(--dark-blue);
+}
+
+.problem .cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.problem .card {
+  background:var(--dark-blue);
+  padding: 30px;
+  width: 260px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.problem .card:hover {
+  transform: translateY(-8px);
+}

@@ -1,0 +1,55 @@
+.login {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../../assets/image/bg-hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.login-form {
+  padding: 100px 100px;
+
+  background-color: var(--card);
+  border: 1px solid var(--light-green);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: max-content;
+  z-index: 100;
+}
+.login-form h2 {
+  margin-bottom: 35px;
+}
+#create-account-link {
+  cursor: pointer;
+  color: var(--dark-blue);
+  margin-right: 20px;
+  font-weight: bold;
+}
+.create-account-div {
+  margin-top: 20px;
+}
+.loading-screen {
+  transition: opacity 0.5s ease;
+}
+.logo {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@media (max-width: 500px) {
+  .login-form {
+    width: 100%;
+    padding: 100px 10px;
+  }
+}

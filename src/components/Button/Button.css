@@ -1,0 +1,98 @@
+.login-btn {
+  background-color: var(--dark-blue);
+  border: none;
+  padding: 10px 110px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.q-btn {
+  background-color: var(--dark-blue);
+  border: none;
+  padding: 10px 110px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.register-btn {
+  background-color: var(--dark-blue);
+  border: none;
+  padding: 10px 95px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hero-btn {
+  background-color: var(--light-green);
+  border: none;
+  padding: 10px 110px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.btn-curricula {
+  background: linear-gradient(to right, #4a6cf7, #1e365e);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: larger;
+}
+
+.btn-curricula:hover {
+  transform: scale(1.05);
+}
+.logout-btn {
+  background-color: white;
+  color: var(--dark-blue);
+  border: none;
+  padding: 10px 9px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .btn-curricula {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .q-btn {
+    font-size: medium;
+  }
+
+  .login-btn {
+    font-size: small;
+  }
+  .btn-curricula {
+    font-size: medium;
+  }
+  .register-btn {
+    font-size: medium;
+  }
+}
+@media (max-width: 300px) {
+  .hero-btn {
+    width: 100%;
+  }
+  .login-btn {
+    width: 100%;
+    
+  }
+  .register-btn {
+    width: 100%;
+  }
+  .q-btn {
+    width: 100%;
+    font-weight: 100;
+    padding: 10px;
+   
+  }
+}

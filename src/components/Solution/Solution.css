@@ -1,0 +1,31 @@
+.solution {
+  padding: 80px 20px;
+  background: #f1f5f9;
+  text-align: center;
+
+}
+
+.solution h2 {
+  margin-bottom: 40px;
+  color: var(--dark-blue);
+}
+
+.solution .cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.solution .card {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: white;
+  padding: 30px;
+  width: 260px;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.solution .card:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,200 @@
+.section-profile {
+  min-height: 100vh;
+  padding: 120px 30px 40px;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* الحاوية */
+.stats-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* كارد الأداء العام */
+.stats-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 25px 25px 30px;
+  margin-bottom: 25px;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.stats-card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  align-self: flex-start;
+}
+
+
+.stats-sections-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stats-sections-title {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.stats-section-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stats-section-card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.stats-section-card-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  align-self: flex-start;
+}
+
+.stats-section-card-subs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.stats-sub-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stats-sub-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stats-sub-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats-sub-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.stats-sub-pct {
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+}
+
+.stats-empty {
+  color: rgba(255,255,255,0.6);
+  font-size: 15px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* progress bar */
+.progress-bar {
+  flex: 1;
+  height: 28px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 30px;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #818cf8, #4f46e5);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  min-width: 36px;
+  transition: width 0.4s ease;
+}
+
+.progress-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  white-space: nowrap;
+}
+
+/* زر التفاصيل */
+.stats-sub-bar-row .stats-detail-btn {
+  flex-shrink: 0;
+  background: white;
+  color: #4f46e5;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 6px 18px;
+  border-radius: 30px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+
+@media (max-width: 600px) {
+  .section-profile {
+    padding: 100px 16px 40px;
+  }
+
+  .stats-sub-bar-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .stats-sub-bar-row .stats-detail-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .stats-card h2,
+  .stats-sections-title {
+    font-size: 18px;
+  }
+}
+
+/* الخطط */
+.plans {
+  grid-column: 1 / -1;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.plans h2 {
+  color: white !important;
+}
+
+.plans div {
+  background: white;
+  color: #374151;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}

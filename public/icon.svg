@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- الخلفية دائرية أو مربعة بزوايا مستديرة (اختياري) -->
+<rect width="512" height="512" rx="100" fill="white"/>
+<!-- رمز النبض مع السهم المستوحى من الشعار -->
+<path d="M80 320H160L210 120L310 400L360 260H430" stroke="#1D4ED8" stroke-width="45" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- رأس السهم -->
+<path d="M380 200L440 260L380 320" fill="#1D4ED8"/>
+<!-- نقطة جمالية أو رمز ورقة الشجر الموجودة في الشعار (تبسيط للـ Favicon) -->
+<circle cx="160" cy="320" r="15" fill="#1D4ED8"/>
+</svg>

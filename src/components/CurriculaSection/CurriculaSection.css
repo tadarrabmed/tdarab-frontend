@@ -1,0 +1,21 @@
+.curricula-section {
+  width: 100%;
+  background-color: rgb(235, 240, 251);
+  padding-top: 50px;
+  padding-bottom: 50px;
+ 
+}
+.curricula-header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.curricula-div {
+  gap: 100px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}

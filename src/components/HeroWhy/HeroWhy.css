@@ -1,0 +1,41 @@
+.why-hero {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  width: 100%;
+  height: 70vh;
+}
+
+.why-hero .container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.why-hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.why-hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.why-hero button {
+  margin-top: 30px;
+  padding: 14px 32px;
+  background: white;
+  color: #1e3a8a;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.why-hero button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}

@@ -1,0 +1,30 @@
+.stats {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  padding: 30px;
+  width: 180px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.stat:hover {
+  transform: translateY(-5px);
+}
+
+.stat h3 {
+  font-size: 32px;
+  color: white;
+}
+
+.stat p {
+  color: white;
+}
