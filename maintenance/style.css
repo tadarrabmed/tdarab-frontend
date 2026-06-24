@@ -1,0 +1,239 @@
+/* ───────────────────────────────────────────────
+   TDARAB — Maintenance / Coming Soon Page
+   ─────────────────────────────────────────────── */
+
+:root {
+  --primary:       #10b981;
+  --primary-light: #34d399;
+  --primary-dark:  #059669;
+  --surface:       #111a13;
+  --surface-2:     #0a0f0b;
+  --border:        #1e2e23;
+  --text:          #e8f5e9;
+  --text-secondary:#9cafa1;
+  --text-muted:    #5e7363;
+  --warning:       #f59e0b;
+  --header-height: 64px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--surface-2);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Header ───────────────────────────────────── */
+.header {
+  height: var(--header-height);
+  background: linear-gradient(135deg, #070f09, #0f1f14, #0a1a0e);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--text);
+}
+
+.logo span { opacity: 0.6; font-weight: 500; }
+
+.header-badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* badge colours per mode */
+body[data-mode="coming-soon"] .header-badge {
+  background: rgba(16, 185, 129, 0.12);
+  color: var(--primary-light);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+body[data-mode="maintenance"] .header-badge {
+  background: rgba(245, 158, 11, 0.12);
+  color: #fcd34d;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+/* ── Main ─────────────────────────────────────── */
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 48px 40px;
+  max-width: 580px;
+  width: 100%;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* ── Icon ─────────────────────────────────────── */
+.icon-wrap {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 28px;
+  transition: background 0.3s, color 0.3s;
+}
+
+body[data-mode="coming-soon"] .icon-wrap {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--primary);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+body[data-mode="maintenance"] .icon-wrap {
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+/* ── Typography ───────────────────────────────── */
+h1 {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+.subtitle {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* ── Divider ──────────────────────────────────── */
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 28px 0;
+}
+
+/* ── Features ─────────────────────────────────── */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.feature-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--primary);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+body[data-mode="maintenance"] .feature-dot { background: #f59e0b; }
+
+/* ── Contact ──────────────────────────────────── */
+.contact {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.contact a {
+  color: var(--primary-light);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact a:hover { text-decoration: underline; }
+
+/* ── Footer ───────────────────────────────────── */
+.footer {
+  padding: 18px 32px;
+  border-top: 1px solid var(--border);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-right {
+  position: absolute;
+  right: 32px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer-right::before {
+  content: '|';
+  color: rgba(255, 255, 255, 0.25);
+  font-weight: 300;
+  margin-right: 12px;
+  user-select: none;
+}
+
+.footer-right a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.footer-right a:hover {
+  color: var(--primary-light);
+  text-decoration: none !important;
+}
+
+.footer-heart { color: #f87171; }
+
+.footer-sep { opacity: 0.4; }
+
+/* ── Responsive ───────────────────────────────── */
+@media (max-width: 560px) {
+  .card { padding: 32px 24px; }
+  h1 { font-size: 22px; }
+  .header { padding: 0 20px; }
+  .footer { flex-direction: column; gap: 10px; padding: 20px 16px; }
+  .footer-right { position: static; }
+}
